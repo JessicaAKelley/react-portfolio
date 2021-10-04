@@ -1,5 +1,5 @@
 import React from 'react';
-//import resumeFile from "../../assets/JessicaAKelley_Resume.pdf";
+import resumeFile from '../../assets/files/JessicaAKelley_Resume.pdf';
 
 function Resume() {
 	return (
@@ -8,9 +8,8 @@ function Resume() {
 				<h1 className="page-header">My Resume</h1>
 			</div>
             <div className="bottom-spacing">
-				<a href={require("../../assets/files/JessicaAKelley_Resume.pdf")} download>
-					<h4>Download My Resume</h4>
-				</a>
+            <a className ="myresume" href= {resumeFile} target="_blank"  rel="noreferrer" title ="Resume"></a>
+				<h4>Download My Resume</h4>
 			</div>
 			<div>
                 <h5>Front-End Skills and Proficiencies</h5>

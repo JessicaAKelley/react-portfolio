@@ -25,7 +25,7 @@ function Portfolio() {
 				'Node.js',
 				'Handlebars.js',
 				'Express & Sequelize',
-				'Heroku & AWS S3',
+				'Heroku',
 			],
 			github: 'https://github.com/JessicaAKelley/hearthstone_reviewer',
 			deployed: 'https://hearthstone-reviewer.herokuapp.com/',

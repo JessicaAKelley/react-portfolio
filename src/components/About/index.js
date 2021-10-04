@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from '../../assets/images/me.jpeg'
 
 
 function About() {
@@ -8,11 +9,7 @@ function About() {
 				<h1 className="page-header">About Me</h1>
 			</div>
 			<div className="center">
-				<img
-					src={require('../../assets/images/me.jpeg')}
-					alt="about-me"
-					className="photo"
-				/>
+                <img src={Image} className="photo" style={{ width: "300px", height:"300px" }} alt="about-me"></img>
 			</div>
 			<div>
                 <p>Hi, I'm Jessica (or Jess)! Thank you for taking the time to check
