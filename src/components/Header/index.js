@@ -1,14 +1,18 @@
 import React from 'react';
 import Nav from '../../components/Nav'
 
-function Header (){
+function Header ({ setPage }){
 
     return (
-        <section className="flex-row">
-            <h1>Jessica Kelley</h1>
-            <Nav> </Nav>
-        </section>
+        <header className= "MyPicture" >
+                <h1 className ="flex-row">
+                    <a href="/" onClick={() => setPage("")}> </a>
+                    <i>Jessica Kelley</i>
+                </h1>
+            
+            <Nav setPage={setPage}> </Nav>
+                
+        </header>
     );
 }
-
 export default Header;

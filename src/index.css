@@ -8,8 +8,8 @@ main {
   --secondary: #F3A847;
   --tertiary: #B12704;
   --light: #fafafa;
-  --dark: #130f53;
-  --darker: #020420;
+  --dark:rgb(122, 12, 67);
+  --darker: #081e47d8;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -291,4 +291,17 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+.MyPicture {
+  height: 200px;
+  background-image: url(./assets/images/me.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content:flex-end;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  width: 100%;
 }

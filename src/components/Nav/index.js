@@ -1,26 +1,26 @@
 import React from 'react';
-import About from '../About'
 
-function Nav(){
-
+function Nav({ setPage }){
     return (
-        <header>
-            <h1>Jessica Kelley</h1>
-            <nav>
-                <ul  className = "flex-row">
-                    <li className = "mx-2">
-                        <a href ="#about">About Me</a>
-                    </li>
-                    <li>
-                        <span>Portfolio</span>
-                    </li>
-                    <li>
-                        <span>Contact</span>
-                    </li>
+        <nav>
+            <ul  className = "flex-row">
+                <li className = "mx-2">
+                    <a href ="#about" onClick={() => setPage("about")}>About Me</a>
+                </li>
 
-                </ul>
-            </nav>
-        </header> 
+                <li className = "mx-2">
+                    <a href ="#portfolio" onClick={() => setPage("portfolio")}>Portfolio</a>
+                </li>                  
+                <li className = "mx-2">
+                    <a href ="#contact" onClick={() => setPage("contact")}>Contact</a>
+                </li>
+                <li className = "mx-2">
+                    <a href ="#resume" onClick={() => setPage("contact")}>Resume</a>
+                </li>
+
+            </ul>
+        </nav>
+
     );
 }
-export default Navigation;
+export default Nav;
