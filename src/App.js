@@ -1,16 +1,13 @@
-import "./App.css";
-import React from "react";
-
-import Navigation from "./components/Navigation";
-
+import React from 'react';
+import './App.css';
+import Header from './components/Header'
 
 function App() {
-	return (
-		<div>
-			<Navigation></Navigation>
-			<main>
-			</main>
-		</div>
-	);
-
-export default App;
+  return (
+    <div> 
+      <main>
+      <Header/>
+      </main>
+    </div>
+  );
+}
