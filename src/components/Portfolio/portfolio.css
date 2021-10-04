@@ -1,0 +1,80 @@
+:root {
+    /* from coolers: https://coolors.co/f06543-e8e9eb-e0dfd5-313638-f09d51 */
+    --platinum:#eeeae5;
+    --alabaster:#E0DFD5;
+    --onyx:#313638;
+}
+.card {
+    background-color: var(--platinum);
+    border-radius: 5px;
+    height: 300px;
+    margin: 2rem;
+    position:relative;
+    width: 300px;
+    box-shadow: 0 2px 2px var(--onyx), 0 6px 12px var(--onyx);
+}
+
+.project{
+    color:black;
+}
+
+#project-icon {
+    background-color: var(--platinum);
+    padding: 5px;
+}
+
+.card .img-container {
+    height: 75%;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--platinum);
+}
+
+#topics {
+    font-size: small;
+    font-style: italic;
+    color: var(--onyx);
+}
+
+.card .img-container img {
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: var(--platinum);
+}
+
+.card .content {
+    font-size: 18px;
+    background-color: var(--platinum);
+    color: var(--orange-soda);
+    font-weight: bold;
+    text-align: center;
+}
+
+#card-title {
+    /* margin-top: 10px; */
+    color: var(--onyx);
+}
+
+.projectdata {
+    /* padding-top: 30px;*/
+    height: 20%; 
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    padding: 5px;
+    align-content: flex-start; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin: 5px 0;
+    line-height: 1.25;
+}
