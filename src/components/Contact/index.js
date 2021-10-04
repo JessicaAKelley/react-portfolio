@@ -1,66 +1,97 @@
-import React,{useState}from 'react';
-import { validateEmail } from '../../utils/helpers';
+import React, { useState } from "react";
+import { validateEmail } from "../../utils/helpers";
 
-function ContactForm(){
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    const { name, email, message } = formState;
-    const [errorMessage, setErrorMessage] = useState('');   
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log(formState);
-    }
-    function handleChange(e) {
-        // update the name property of formState 
-        if (e.target.name === 'email')
-        {
-        const isValid = validateEmail(e.target.value);
-    
-        if (!isValid) {
-            setErrorMessage('Your email is invalid.');
-        } 
-        else 
-        {
-            if (!e.target.value.length) {
-            setErrorMessage(`${e.target.name} is required.`);
-            } else {
-            setErrorMessage('');
-            }
-        }
-        if (!errorMessage) 
-        {
-        setFormState({ ...formState, [e.target.name]: e.target.value });
-        }
+function Contact() {
+	const [formState, setFormState] = useState({
+		name: "",
+		email: "",
+		message: "",
+	});
 
-        }
-    }
-    function handleSubmit(e) {
-        e.preventDefault();
+	const [errorMessage, setErrorMessage] = useState("");
+
+	const { name, email, message } = formState;
+
+	function handleChange(e) {
+		if (e.target.name === "email") {
+			const isValid = validateEmail(e.target.value);
+			if (!isValid) {
+				setErrorMessage("Your email is invalid.");
+			} else {
+				if (!e.target.value.length) {
+					setErrorMessage(`${e.target.name} is required.`);
+				} else {
+					setErrorMessage("");
+				}
+			}
+		}
+
+		if (!errorMessage) {
+			setFormState({ ...formState, [e.target.name]: e.target.value });
+		}
+	}
+
+	function handleBlank(e) {
+		if (e.target.name === "Name" || e.target.name === "Message") {
+			if (!e.target.value.length) {
+				setErrorMessage(`${e.target.name} is required.`);
+			} else {
+				setErrorMessage("");
+			}
+		}
+
+		if (!errorMessage) {
+			setFormState({ ...formState, [e.target.name]: e.target.value });
+		}
+	}
+
+	return (
+		<section>
+			<div className="center">
+				<h2 className="page-header">Let's Connect</h2>
+			</div>
+			<div>
+				<form id="contact-form">
+					<div>
+						<label htmlFor="Name">Name:</label>
+						<br></br>
+						<input
+							type="text"
+							defaultValue={name}
+							onBlur={handleBlank}
+							name="Name"
+						/>
+					</div>
+					<div>
+						<label htmlFor="email">Email Address:</label>
+						<br></br>
+						<input
+							type="email"
+							defaultValue={email}
+							name="email"
+							onBlur={handleChange}
+						/>
+					</div>
+					<div>
+						<label htmlFor="Message">Message:</label>
+						<br></br>
+						<textarea
+							name="Message"
+							defaultValue={message}
+							onBlur={handleBlank}
+							rows="5"
+						/>
+					</div>
+					{errorMessage && (
+						<div>
+							<p className="error-text">{errorMessage}</p>
+						</div>
+					)}
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+		</section>
+	);
 }
 
-return (
-        <section id ="contact" className="justify-content-center">
-        <h1 data-testid="h1tag">Let's Connect</h1>
-            <form id="contact-form" className = "justify-content-center" onSubmit={handleSubmit}>
-                <div>
-                <label htmlFor="name">Name:</label>
-                <input type="text" defaultValue={name}onBlur={handleChange} name="name"/>
-                </div>
-                <div>
-                <label htmlFor="email">Email:</label>
-                <input type="email" defaultValue={email} name="email" onBlur={handleChange}/>
-                </div>
-                <div>
-                <label htmlFor="message">Message:</label>
-                <textarea name="message" defaultValue={message}  onBlur={handleChange} rows="5" cols="5" />
-            </div>
-            {errorMessage && (
-                <div>
-                    <p className="error-text">{errorMessage}</p>
-                </div>
-                )}
-                <button data-testid="button" className="btn btn-outline-dark mt-4" type="submit" onSubmit={handleSubmit}>Submit</button>
-            </form>
-        </section>
-    );
-}
-export default ContactForm;
+export default Contact;

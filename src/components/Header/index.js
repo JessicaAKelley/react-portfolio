@@ -1,18 +1,22 @@
 import React from 'react';
 import Nav from '../../components/Nav'
 
-function Header ({ setPage }){
+function Header(props) {
+	const { currentTab, setCurrentTab } = props;
 
-    return (
-        <header className= "MyPicture" >
-                <h1 className ="flex-row">
-                    <a href="/" onClick={() => setPage("")}> </a>
-                    <i>Jessica Kelley</i>
-                </h1>
-            
-            <Nav setPage={setPage}> </Nav>
-                
-        </header>
-    );
+	return (
+		<header>
+			<div>
+				<h2>Jessica's React Portfolio</h2>
+			</div>
+			<div>
+				<Nav
+					currentTab={currentTab}
+					setCurrentTab={setCurrentTab}
+				></Nav>
+			</div>
+		</header>
+	);
 }
+
 export default Header;

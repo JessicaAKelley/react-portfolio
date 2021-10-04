@@ -1,26 +1,27 @@
-import React from 'react';
 
-function Nav({ setPage }){
-    return (
-        <nav>
-            <ul  className = "flex-row">
-                <li className = "mx-2">
-                    <a href ="#about" onClick={() => setPage("about")}>About Me</a>
-                </li>
+import React from "react";
 
-                <li className = "mx-2">
-                    <a href ="#portfolio" onClick={() => setPage("portfolio")}>Portfolio</a>
-                </li>                  
-                <li className = "mx-2">
-                    <a href ="#contact" onClick={() => setPage("contact")}>Contact</a>
-                </li>
-                <li className = "mx-2">
-                    <a href ="#resume" onClick={() => setPage("resume")}>Resume</a>
-                </li>
+function Nav(props) {
+	const { currentTab, setCurrentTab } = props;
 
-            </ul>
-        </nav>
-
-    );
+	return (
+		<nav>
+			<ul className="flex-row mobile-view">
+				<li className={currentTab === "about" ? "mx-2 navActive" : "mx-2"}>
+					<span onClick={() => setCurrentTab("about")}>About Me</span>
+				</li>
+				<li className={currentTab === "portfolio" ? "mx-2 navActive" : "mx-2"}>
+					<span onClick={() => setCurrentTab("portfolio")}>Portfolio</span>
+				</li>
+				<li className={currentTab === "contact" ? "mx-2 navActive" : "mx-2"}>
+					<span onClick={() => setCurrentTab("contact")}>Contact</span>
+				</li>
+				<li className={currentTab === "resume" ? "mx-2 navActive" : "mx-2"}>
+					<span onClick={() => setCurrentTab("resume")}>Resume</span>
+				</li>
+			</ul>
+		</nav>
+	);
 }
+
 export default Nav;
