@@ -39,7 +39,7 @@ function ContactForm(){
 
 return (
         <section id ="contact" className="justify-content-center">
-        <h1 data-testid="h1tag">Contact</h1>
+        <h1 data-testid="h1tag">Let's Connect</h1>
             <form id="contact-form" className = "justify-content-center" onSubmit={handleSubmit}>
                 <div>
                 <label htmlFor="name">Name:</label>

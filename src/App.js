@@ -1,40 +1,44 @@
-import React from 'react';
-import './App.css';
-import About from '../src/components/About';
-import Contact from '../src/components/Contact'
-import Project from '../src/components/Project'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Resume from './components/Resume'
+import "./App.css";
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
-  const [page, setPage] = React.useState('');
-  
-  const showPage = () => {
-    if (page === "about") {
-      return <About />
-    } else if (page === "contact") {
-      return <Contact />
-    }else if (page === "portfolio") {
-      return <Project /> 
-    }else if (page === "resume") {
-      return <Resume /> 
-    }else {
-      return (
-        <h1>Home Page</h1>
-      )
-    }
-  }
+	const [currentTab, setCurrentTab] = useState("about");
 
-  return (
-    <div> 
-        <Header setPage={setPage}/>
+	// This function checks to see which tab is selected and then generates the appropriate tab.
+	const renderTab = () => {
+		switch (currentTab) {
+			case "about":
+				return <About />;
+			case "portfolio":
+				return <Portfolio />;
+			case "contact":
+				return <Contact />;
+			case "resume":
+				return <Resume />;
+			default:
+				return null;
+		}
+	};
 
-      <main>
-        {showPage()}
-      </main>  
-      <Footer/>
-    </div>
-  );
+	return (
+		<div>
+			<div className="mobile-header">
+				<Header currentTab={currentTab} setCurrentTab={setCurrentTab}></Header>
+			</div>
+			<div>
+				<main>{renderTab()}</main>
+			</div>
+			<div>
+				<Footer></Footer>
+			</div>
+		</div>
+	);
 }
+
 export default App;

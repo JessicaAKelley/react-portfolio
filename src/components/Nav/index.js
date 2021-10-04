@@ -15,7 +15,7 @@ function Nav({ setPage }){
                     <a href ="#contact" onClick={() => setPage("contact")}>Contact</a>
                 </li>
                 <li className = "mx-2">
-                    <a href ="#resume" onClick={() => setPage("contact")}>Resume</a>
+                    <a href ="#resume" onClick={() => setPage("resume")}>Resume</a>
                 </li>
 
             </ul>
