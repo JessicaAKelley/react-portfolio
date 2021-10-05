@@ -16,7 +16,7 @@ A personal portfolio created with React.js featuring my selected works, skills, 
 - NPM
 
 ## Installation
-View my portfolio live [here](link)!
+View my portfolio live [here](https://jessicaakelley.github.io/react-portfolio/)!
 
 ## Questions
 For any questions, comments, or suggestions, I can be reached at kelleyajessica@gmail.com.
