@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.a55318de.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.eab9dcd6.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.eab9dcd6.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.2b80d5ed.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.2b80d5ed.js.map",
+    "static/css/2.c1256375.chunk.css": "/react-portfolio/static/css/2.c1256375.chunk.css",
+    "static/js/2.73956a08.chunk.js": "/react-portfolio/static/js/2.73956a08.chunk.js",
+    "static/js/2.73956a08.chunk.js.map": "/react-portfolio/static/js/2.73956a08.chunk.js.map",
+    "static/js/3.81a69f93.chunk.js": "/react-portfolio/static/js/3.81a69f93.chunk.js",
+    "static/js/3.81a69f93.chunk.js.map": "/react-portfolio/static/js/3.81a69f93.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/2.c1256375.chunk.css.map": "/react-portfolio/static/css/2.c1256375.chunk.css.map",
+    "static/css/main.a55318de.chunk.css.map": "/react-portfolio/static/css/main.a55318de.chunk.css.map",
+    "static/js/2.73956a08.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.73956a08.chunk.js.LICENSE.txt",
+    "static/media/JessicaAKelley_Resume.54c3bdb9.pdf": "/react-portfolio/static/media/JessicaAKelley_Resume.54c3bdb9.pdf",
+    "static/media/hearthstone-reviewer.b761bc97.png": "/react-portfolio/static/media/hearthstone-reviewer.b761bc97.png",
+    "static/media/me.4a4a1cd4.jpeg": "/react-portfolio/static/media/me.4a4a1cd4.jpeg",
+    "static/media/movie-night.c0730f7f.png": "/react-portfolio/static/media/movie-night.c0730f7f.png",
+    "static/media/weather-dashboard.67d2003a.png": "/react-portfolio/static/media/weather-dashboard.67d2003a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b80d5ed.js",
+    "static/css/2.c1256375.chunk.css",
+    "static/js/2.73956a08.chunk.js",
+    "static/css/main.a55318de.chunk.css",
+    "static/js/main.eab9dcd6.chunk.js"
+  ]
+}
