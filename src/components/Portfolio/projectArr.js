@@ -10,7 +10,7 @@ export default [
     name: "2Nite Events",
     image: niteEvents,
     github: "https://github.com/JessicaAKelley/2NiteEvents",
-    deploy: "https://jessicaakelley.github.io/password-generator/",
+    deploy: "https://gentle-peak-37686.herokuapp.com/",
     technologies: "HTML, CSS, JavaScript",
   },
   {
