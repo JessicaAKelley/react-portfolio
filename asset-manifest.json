@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.a55318de.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.eab9dcd6.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.eab9dcd6.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.28eb7df3.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.28eb7df3.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.2b80d5ed.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.2b80d5ed.js.map",
     "static/css/2.c1256375.chunk.css": "/react-portfolio/static/css/2.c1256375.chunk.css",
@@ -18,13 +18,15 @@
     "static/media/hearthstone-reviewer.b761bc97.png": "/react-portfolio/static/media/hearthstone-reviewer.b761bc97.png",
     "static/media/me.4a4a1cd4.jpeg": "/react-portfolio/static/media/me.4a4a1cd4.jpeg",
     "static/media/movie-night.c0730f7f.png": "/react-portfolio/static/media/movie-night.c0730f7f.png",
-    "static/media/weather-dashboard.67d2003a.png": "/react-portfolio/static/media/weather-dashboard.67d2003a.png"
+    "static/media/password-generator.ead3eaf0.png": "/react-portfolio/static/media/password-generator.ead3eaf0.png",
+    "static/media/weather-dashboard.67d2003a.png": "/react-portfolio/static/media/weather-dashboard.67d2003a.png",
+    "static/media/work-day-scheduler.b8c01a51.png": "/react-portfolio/static/media/work-day-scheduler.b8c01a51.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2b80d5ed.js",
     "static/css/2.c1256375.chunk.css",
     "static/js/2.73956a08.chunk.js",
     "static/css/main.a55318de.chunk.css",
-    "static/js/main.eab9dcd6.chunk.js"
+    "static/js/main.28eb7df3.chunk.js"
   ]
 }
