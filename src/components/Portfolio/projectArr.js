@@ -1,4 +1,4 @@
-// import niteEvents from "../../assets/images/nite-events.png";
+import niteEvents from "../../assets/images/2nite-events.png";
 import hearthstoneReviewer from "../../assets/images/hearthstone-reviewer.png";
 import movieNight from "../../assets/images/movie-night.png";
 import weatherDashboard from "../../assets/images/weather-dashboard.png";
@@ -8,8 +8,8 @@ export default [
   {
     id: 1,
     name: "2Nite Events",
-    //image: 2NiteEvents,
-    github: "https://github.com/JessicaAKelley/password-generator",
+    image: niteEvents,
+    github: "https://github.com/JessicaAKelley/2NiteEvents",
     deploy: "https://jessicaakelley.github.io/password-generator/",
     technologies: "HTML, CSS, JavaScript",
   },
